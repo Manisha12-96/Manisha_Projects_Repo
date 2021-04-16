@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manisha's Component Library</title>
+    <!-- <style>
+        body{
+            color:aqua;
+        }
+    </style> -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Manisha's Component Library</h1>
+    <!-- <h1 style="color: brown;">Manisha's Component Library</h1> -->
+    <h1 id="title">Manisha's Component Library</h1>
     <p><strong>Manisha Mantri</strong></p>
     <p>This is a simple and minimal component library, which can be used to develop applications.</p>
     <hr>
@@ -23,14 +30,20 @@
    <p class="text-sm">This is relatively small text.</p>
    <hr>
    <h2>@containers</h2>
-   <h3>@fluid containers</h3>
+<div class="container-fluid">   
+    <h3>@fluid containers</h3>
    <p>This is used to create a full width container, that will always span the entire width of the screen.</p>
+</div>
+<!-- <hr> -->
+<div class="container">
    <h3>@center container</h3>
    <p>This is used to center the element within container, that will go till given width and center the content.</p>
+</div>
+
    <hr>
    <h2>@links</h2>
-   <a href="#">Primary Link</a>
-   <a href="#">Secondary Link</a>
+   <a href="#" class="primary-link">Primary Link</a>
+   <a href="#" class="secondary-link">Secondary Link</a>
    <hr>
    <h2>@lists</h2>
    <h3>Ordered List</h3>
@@ -40,13 +53,13 @@
        <li>Third item in ordered list</li>
    </ol>
    <h3>Unordered List</h3>
-   <ul class="list-styling">
+   <ul class=" list-styling">
        <li>First item in unordered list</li>
        <li>Second item in unordered list</li>
        <li>Third item in unordered list</li>
    </ul>
    <h3>Unordered Inline List </h3>
-   <ul class="list-styling">
+   <ul class="unordered list-inline">
     <li class="list-item-inline">First inline item in unordered list</li>
     <li class="list-item-inline">Second inline item in unordered list</li>
     <li class="list-item-inline">Third inline item in unordered list</li>
@@ -72,15 +85,29 @@
 </nav>
 <hr>
 <h2>@header</h2>
-<header class="container-hero">
-    <img src="" alt="img1">
+<header class="container hero">
+    <img src="header-image. svg" style="position: sticky;" alt="img1">
     <h1>I am Manisha Mantri, I am studying in skill safari</h1>
 </header>
 <hr>
 <h2>@section</h2>
 <p>"Section element is used to group together related elements. This grouped the generic block of related contents. "</p>
 <h3>@normal section</h3>
-
-
+<section class="section"> <h2>Heading inside section.</h2>
+<p>Paragraph inside the section</P>
+</section>
+<hr>
+<h2>@footer</h2>
+<footer>
+<div class="container">
+<div class="heading">header inside footer</div>
+  <ul class="unordered list-inline">
+    <li class="list-item-inline"><a style="text-decoration:none; color:white;" class="link" href="https://github.com/Manisha12-96"></a>GitHub</li>
+    <li class="list-item-inline"><a style="text-decoration:none; color:white;" class="link" href="https://github.com/Manisha12-96"></a>LinkedIn</li>
+    <li class="list-item-inline"><a style="text-decoration:none; color:white;" class="link" href="https://github.com/Manisha12-96"></a>Twitter</li>
+</ul>
+</div>
+</footer>
+<div style="margin-top: 20px;"></div>
 </body>
 </html>
